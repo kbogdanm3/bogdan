@@ -1,92 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: 'MedievalSharp', cursive;
+  color: white;
+  background: url('images/ocean-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #494848;
-    padding: 15px 20px;
+.background-overlay {
+  background-color: rgba(0, 0, 50, 0.6);
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.logo {
-width:100px;
-height: 50px;
+header h1 {
+  text-align: center;
+  font-size: 3em;
+  color: gold;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
+main {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.nav-links li {
-    margin: 0 15px;
+p {
+  font-size: 1.3em;
+  margin: 20px 0;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s;
+/* Fade-in анімація */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
 }
 
-.nav-links a:hover {
-    color: grey;
+.delay {
+  animation-delay: 1s;
 }
 
-div {
-    text-align: center;
-    margin-bottom: 30px;
+.delay2 {
+  animation-delay: 2s;
 }
 
-.hehe {
-    width: 600px;
-    height: auto;
+.delay3 {
+  animation-delay: 3s;
 }
 
-footer{
-    background-color: #494848;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s;
-    text-align: center;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-h4{
-    color: black;
+/* Магічні кнопки */
+.magic-button {
+  background-color: #4b0082;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #9370db;
+  display: inline-block;
 }
 
-h5{
-    color: orange;
+.magic-button:hover {
+  background-color: #6a0dad;
+  box-shadow: 0 0 25px #dda0dd;
+  transform: scale(1.05);
 }
 
-p{
- padding-right: 60px;
- padding-left:  60px;
- padding-top: 50px;
-    
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #ccc;
 }
-
-img {
-    border: 1px solid dark;
-    border-radius: 15px;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-
-
-
